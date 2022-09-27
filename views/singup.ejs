@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/singup.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="area">
+        <di class="d1">
+            <img class="images" src="../public/images/otp-security.png" alt="">
+            
+        </di>
+        <div class="d2">
+            <div class="m_form">
+                <div class="text"><h1>Hello Again!</h1></div>
+                <p>Pleas _ sing-up _ here [PassMan.com]</p>
+                <form class="mform" action="/singup" method="POST">
+                    <div>
+                        <input type="text" id="name" class="inpfield" placeholder="Name" name="name" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" class="inpfield" placeholder="Email" name="email" required>
+                    </div>
+                    <div>
+                        <input type="password" id="password" class="inpfield" placeholder="Password" name="password" required>
+                    </div>
+                    <button class="form-button" type="submit">Register</button>
+                </form>
+                Or <br>
+
+                <a class="link" href="/">Login</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

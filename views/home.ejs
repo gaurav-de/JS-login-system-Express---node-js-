@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Welcome <%=user_name%>, to our home page.
+    
+
+
+    <!-- DISPLAYING PASSWORDS -->
+    <h3> Your Passwords </h3>
+    <ul>
+        <% for (const [key, val] of Object.entries(user_data)) { %>
+            <li><%= key %>  <%= val %></li>
+        <% } %> 
+    </ul>
+
+    
+
+    <!-- CREAT A NEW FIELD FOR PASSWORDS -->
+    <h3> Add Password </h3>
+    <form action="/new-password" method="post">
+        <div>
+            <label for="url"> Your email -> </label>
+            <input type="text" id="s_email" name="s_email" value="<%=user_email%>" readonly required>
+        </div>
+        <div>
+            <label for="url">Site Url</label>
+            <input type="text" id="s_url" name="s_url" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="s_password" name="s_password" required>
+        </div>
+        <button type="submit">Creat</button>
+    </form>
+
+</body>
+</html>

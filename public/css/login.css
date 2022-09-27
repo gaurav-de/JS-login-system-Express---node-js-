@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+:root {
+    --theam_colour: rgb(89, 147, 112);
+    --white: #ffffff;
+    --red: rgb(246, 98, 98);
+    --green: rgb(98, 246, 157);
+}
+
+body{
+    animation: fadeInAnimation ease 0.7s;
+    background: #f1f3fa;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;   
+}
+
+.area{
+    background-color: #ffffff;
+    border-radius: 19px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.d1{
+    background-color: var(--theam_colour);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 7px;
+}
+
+.d2{
+    background-color: #ffffff;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 7px;
+}
+
+.m_form{
+    width: 80%;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    padding: 10px;
+}
+
+.images{
+    height: 400px;
+}
+
+.inpfield{
+    font-size: 15px;
+    border: 1px solid rgba(184, 184, 184, 0.18);
+    background-color: #efefef34;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 7px;
+    width: 60%;
+}
+
+.inpfield:focus{ 
+    transition: 0.4s;
+    border: none;	
+    outline: none;
+    border: 1px solid var(--theam_colour);	
+}
+
+.form-button:focus{
+    transition: 0.4s;
+    border-color: #c6ffbf;
+}
+
+.form-button{
+    color: #f1f1f1;
+    font-size: 15px;
+    border: solid;
+    border-color: #f1f1f1;
+    background-color: var(--theam_colour);
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-bottom: 9px;
+    padding: 14px;
+    width: 67%;
+}
+
+.link{
+    padding: 10px;
+    font-size: 17px;
+    color: var(--theam_colour);
+    text-decoration: none;
+}

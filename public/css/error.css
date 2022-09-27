@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+:root {
+    --theam_colour: #517eb9;
+    --mclr: #517eb979;
+    --white: #ffffff;
+    --red: rgb(246, 98, 98);
+    --green: rgb(98, 246, 157);
+}
+
+body {
+    background-color: #e8ecf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.area {
+    transition: 0.9s;
+    /* CENTRING IT */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* HIGHT-WIDTH */
+    width: 80%;
+    height: 80%;
+
+    /* FOR OTHER ELEMENT IN DIV TO BE CENTRED */
+    display: flex;
+    justify-content: center;
+}
+
+.marea{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.form-button {
+    color: #f1f1f1;
+    font-size: 15px;
+    border: solid;
+    border-color: #f1f1f1;
+    background-color: var(--theam_colour);
+    border-radius: 4px;
+    margin-top: 50px;
+    margin-bottom: 9px;
+    padding: 14px;
+    width: 67%;
+}
