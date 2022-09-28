@@ -7,7 +7,7 @@ const User = require('./modals/s_user')
 
 
 // CONNECTIONG MONGOSE
-const DATABASE_NAME = "users"
+const DATABASE_NAME = "git-login"
 const dbURL = 'mongodb+srv://gaurav:gaurav@cluster0.qcdg3t5.mongodb.net/' + DATABASE_NAME
 mongoose.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => console.log("[mongoose] you are connected to server "))
